@@ -1,44 +1,41 @@
 # Aprendendo sobre Banco de Dados
 
-Bem-vindo! Este é um projeto colaborativo para entrega de atividades do Bootcamp de Python realizado pela Womakers Code que envolve o desenvolvimento de um sistema com banco de dados. Contamos com a participação de 11 colaboradoras, cada uma contribuindo em uma parte específica do projeto.
+
+Bem-vindo! Este repositório foi estabelecido como parte integral do Bootcamp Back-End Python Django da WomakersCode, com o propósito de explorar e praticar conceitos fundamentais associados a bancos de dados. 
 
 ## Objetivo 🎯
 
-O objetivo principal deste projeto é criar um banco de dados para armazenar e manipular informações de forma eficiente. Cada colaboradora desempenhará um papel crucial no desenvolvimento, contribuindo em diferentes aspectos.
+Este projeto colaborativo tem como foco o aprendizado e a criação de sistemas com banco de dados, com a valiosa participação de 11 colaboradoras. Cada uma delas desempenha um papel crucial em uma parte específica do projeto, resultando em uma iniciativa conjunta e diversificada. O projeto engloba dois componentes distintos, cada um direcionado a áreas específicas do aprendizado, enriquecendo a experiência de todos os envolvidos.
 
-### Aprendizados
+## Projetos Incluídos
 
-1. **CREATE:** Cria novas tabelas, índices, procedimentos armazenados e outros objetos no banco de dados.
+### 1. Exercícios SQL
 
-2. **ALTER:** Modifica a estrutura de uma tabela existente, como adicionar ou remover colunas.
+Nesta seção, você encontrará uma coleção de exercícios projetados para a prática dos principais comandos SQL. Esses exercícios têm como objetivo fortalecer suas habilidades em consultas, inserções, atualizações e exclusões de dados, proporcionando uma base sólida no uso prático de bancos de dados relacionais.
 
-3. **DROP:** Exclui completamente um banco de dados, tabela, índice ou outro objeto. Use com cautela, pois os dados serão perdidos irreversavelmente.
+### 2. Sistema de Gerenciamento de Biblioteca
 
-4. **INSERT:** Insere novos registros em uma tabela. Você especifica os valores a serem inseridos nas colunas correspondentes.
+Desenvolvido em Python, utilizando o SQLite3 como banco de dados e conectando-se por meio do DBeaver, o Sistema de Gerenciamento de Biblioteca busca oferecer uma solução eficiente e organizada para facilitar o processo de empréstimo de materiais em bibliotecas. Algumas das funcionalidades incluem:
 
-5. **DELETE:** Remove registros de uma tabela com base em condições específicas. Tenha cuidado ao usá-lo, pois pode resultar na perda permanente de dados.
+#### Funcionalidades Principais
 
-6. **SELECT:** Utilizado para recuperar dados de uma ou mais tabelas. Pode ser personalizado para selecionar colunas específicas, aplicar filtros e ordenar os resultados.
+- **Cadastro de Livros:** Permite a inclusão detalhada de informações sobre livros, como título, autor, gênero e disponibilidade.
 
-7. **UPDATE:** Atualiza os dados existentes em uma tabela. Permite modificar valores em colunas específicas com base em condições definidas.
+- **Cadastro de Usuários:** Facilita a criação de perfis de usuários, armazenando dados como nome, contato e histórico de empréstimos.
 
-8. **ORDER BY:** Utilizado para classificar os resultados da consulta com base em uma ou mais colunas, em ordem ascendente ou descendente.
+- **Empréstimo e Devolução de Livros:** Simplifica o processo de empréstimo, registrando a data de retirada e estabelecendo prazos de devolução. Inclui também a funcionalidade de devolução, atualizando automaticamente o status do livro.
 
-9. **LIMIT:** Restringe o número de linhas retornadas em uma consulta, útil para limitar o volume de resultados.
+#### Tecnologias Utilizadas
 
-10. **DISTINCT:** Utilizado para remover duplicatas dos resultados da consulta, exibindo apenas valores únicos.
+1. **Linguagem de Programação:** Python
+   No contexto do Sistema de Gerenciamento de Biblioteca, Python foi escolhido pela sua legibilidade e eficiência no desenvolvimento de aplicações. A linguagem oferece bibliotecas robustas para manipulação de dados e interação com bancos de dados, tornando-a uma escolha adequada para este projeto.
 
-11. **GROUP BY:** Agrupa os resultados da consulta com base em uma ou mais colunas, geralmente usado com funções de agregação como COUNT, SUM, AVG, etc.
+2. **Banco de Dados:** SQLite3
+   O SQLite3 foi adotado para armazenar dados relacionados a livros, usuários e transações no Sistema de Gerenciamento de Biblioteca. Sua natureza "serverless" e a capacidade de ser acessado diretamente por bibliotecas Python o tornam adequado para projetos menores ou locais, proporcionando simplicidade na implementação.
 
-12. **HAVING:** Aplica condições a grupos resultantes de uma cláusula GROUP BY, filtrando os resultados agregados.
+3. **Conexão com Banco de Dados:** DBeaver
+   O DBeaver é utilizado como uma interface para interação com o banco de dados SQLite3. Sua capacidade de conexão fácil e sua interface amigável facilitam o gerenciamento e a visualização dos dados armazenados no banco de dados do Sistema de Gerenciamento de Biblioteca. Essa ferramenta auxilia tanto no desenvolvimento quanto na administração do banco de dados durante o ciclo de vida do projeto.
 
-13. **JOIN:** Combina linhas de duas ou mais tabelas com base em uma condição relacionada, permitindo recuperar dados de tabelas relacionadas.
-
-## Tecnologias 💻
-
-**DBeaver**
-<br>
-Uma ferramenta de gerenciamento de banco de dados universal e gratuita, projetada para facilitar o desenvolvimento, administração e análise de bancos de dados. Com suporte a uma ampla variedade de Sistemas Gerenciadores de Banco de Dados (SGBDs), incluindo MySQL, PostgreSQL, SQLite, Oracle e muitos outros, o DBeaver oferece uma interface intuitiva e recursos poderosos.
 
 ## Colaboradoras 🚀
 
