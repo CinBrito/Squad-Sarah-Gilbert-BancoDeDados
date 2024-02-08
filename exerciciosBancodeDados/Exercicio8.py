@@ -1,5 +1,3 @@
-Exercico8.py
-
 import sqlite3
 
 # Função para criar as tabelas
