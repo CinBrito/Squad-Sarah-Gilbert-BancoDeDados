@@ -33,24 +33,28 @@ def inserirLivro(idLivro, titulo, genero, idEditora, idAutor, Exemplares):
 # inserirUsuario("Fatima Abreu", "Brasil", "21 99999999")
 # cursor.execute('UPDATE Usuario SET id=1 WHERE nome="Fatima Abreu"')
 # conexao.commit()
-# inserirUsuario(2, "Andressa Cabral", "Brasil", "21 989898989")
-
+# inserirUsuario(2, "Andressa Cabral", "Brasil", "21 989898989")  
 # inserirAutor(1, "Robert Cecil Martin", "EUA")
 # inserirEditora(1, "Alta Books")
 # inserirLivro(1, "Código Limpo", "Livro Técnico", 1,1,5)
 
-teste = conexao.execute('SELECT * FROM Usuario')
-for usuario in teste:
-    print(usuario)
+"""
+Quem for responsável por inserir novas entradas é só usar a função como
+feito aqui em cima. Chama a função e insere os parâmetros na ordem ;)
+"""
 
-teste2 = conexao.execute('SELECT * FROM Autor')
-for autor in teste2:
-    print(autor)
+# teste = conexao.execute('SELECT * FROM Usuario')
+# for usuario in teste:
+#     print(usuario)
 
-teste3 = conexao.execute('SELECT * FROM Editora')
-for editora in teste3:
-    print(editora)
+# teste2 = conexao.execute('SELECT * FROM Autor')
+# for autor in teste2:
+#     print(autor)
 
-teste4 = conexao.execute('SELECT * FROM Livro')
-for livro in teste4:
-    print(livro)
+# teste3 = conexao.execute('SELECT * FROM Editora')
+# for editora in teste3:
+#     print(editora)
+
+# teste4 = conexao.execute('SELECT * FROM Livro')
+# for livro in teste4:
+#     print(livro)
