@@ -30,7 +30,8 @@ def buscarLivrosEmprestados():
 # Localizar os livros escritos por um autor específico
 def buscarLivroporAutor():
     listagem = conexao.execute('SELECT Livro.titulo FROM Livro INNER JOIN Autor ON Livro.id_Autor = Autor.id WHERE Autor.nome = "Robert Cecil Martin";')
-    pass
+    for livro in listagem:
+        print(livro)
 
 # Verificar o número de cópias disponíveis de um determinado livro
 def buscarExemplaresPorLivro():
