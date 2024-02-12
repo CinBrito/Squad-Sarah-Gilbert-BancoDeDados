@@ -23,11 +23,15 @@ def listarEditoras():
 
 # Encontrar todos os livros emprestados no momento
 def buscarLivrosEmprestados():
-    pass
+    listagem = conexao.execute('SELECT Livro.titulo FROM Livro INNER JOIN Emprestimo ON Livro.id = Emprestimo.id_Livro WHERE Emprestimo.status = True;')
+    for livro in listagem:
+        print(livro)
 
 # Localizar os livros escritos por um autor específico
 def buscarLivroporAutor():
-    pass
+    listagem = conexao.execute('SELECT Livro.titulo FROM Livro INNER JOIN Autor ON Livro.id_Autor = Autor.id WHERE Autor.nome = "Robert Cecil Martin";')
+    for livro in listagem:
+        print(livro)
 
 # Verificar o número de cópias disponíveis de um determinado livro
 def buscarExemplaresPorLivro():
