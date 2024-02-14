@@ -16,16 +16,16 @@ def alterarLivro():
     pass
 
 def removerUsuario():
-    cursor.execute('DELETE FROM Usuario where id = ?;')        
+    cursor.execute('DELETE FROM Usuario where id = ?', (1))        
 
 def removerAutor():
-     cursor.execute('DELETE FROM Autor where id = ?;')  
+     cursor.execute('DELETE FROM Autor where id = ?', (2))  
 
 def removerEditora():
-    cursor.execute('DELETE FROM Editora where id = ?;')  
+    cursor.execute('DELETE FROM Editora where id = ?', (1))  
 
 def removerLivro():
-    cursor.execute('DELETE FROM Livro where id = ?;') 
+    cursor.execute('DELETE FROM Livro where id = ?', (2)) 
 
 conexao.commit()
 conexao.close
