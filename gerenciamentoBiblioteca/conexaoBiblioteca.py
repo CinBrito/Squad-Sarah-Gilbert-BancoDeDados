@@ -9,6 +9,7 @@ cursor = conexao.cursor()
 # cursor.execute('CREATE TABLE Livro (id INT PRIMARY KEY, titulo VARCHAR(255), genero VARCHAR(50), id_Editora INT, status BOOLEAN, id_Autor INT, Exemplares INT, FOREIGN KEY (id_Autor) REFERENCES Autor(id), FOREIGN KEY (id_Editora) REFERENCES Editora(id));')
 # cursor.execute('CREATE TABLE Emprestimo (id INT PRIMARY KEY, id_Usuario INT, id_Livro INT, status VARCHAR(20), data_emprestimo DATE, data_devolucao DATE, renovacao INT, FOREIGN KEY (id_Usuario) REFERENCES Usuario(id), FOREIGN KEY (id_Livro) REFERENCES Livro(ID), FOREIGN KEY (status) REFERENCES Livro(status));')
 
+# cursor.execute('INSERT INTO Emprestimo (id, id_Usuario, id_Livro, status, data_emprestimo, data_devolucao, renovacao) VALUES (1, 4, 5, True, 02-02-2024, 07-02-2024, 4);')
 
 conexao.commit()
 conexao.close

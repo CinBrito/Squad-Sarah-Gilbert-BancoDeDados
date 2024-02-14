@@ -1,4 +1,8 @@
 from conexaoBiblioteca import cursor, conexao
+import sqlite3
+
+conexao = sqlite3.connect('biblioteca')
+cursor = conexao.cursor()
 
 # Cintia aqui. Não imagino situação de alterar autor ou editora por conta dos poucos campos,
 # então deixei só esses dois pra criar. Não esqueçam que tem que dizer que parâmetro/campo 
@@ -12,13 +16,16 @@ def alterarLivro():
     pass
 
 def removerUsuario():
-    pass
+    cursor.execute('DELETE FROM Usuario where id = ?;')        
 
 def removerAutor():
-    pass
+     cursor.execute('DELETE FROM Autor where id = ?;')  
 
 def removerEditora():
-    pass
+    cursor.execute('DELETE FROM Editora where id = ?;')  
 
 def removerLivro():
-    pass
+    cursor.execute('DELETE FROM Livro where id = ?;') 
+
+conexao.commit()
+conexao.close
