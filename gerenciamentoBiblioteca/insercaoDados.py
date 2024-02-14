@@ -37,6 +37,25 @@ def inserirLivro(idLivro, titulo, genero, idEditora, idAutor, Exemplares):
 # inserirAutor(1, "Robert Cecil Martin", "EUA")
 # inserirEditora(1, "Alta Books")
 # inserirLivro(1, "Código Limpo", "Livro Técnico", 1,1,5)
+    
+
+inserirUsuario(31, "Aurora Martins", "Argentina", "89 7898596874") 
+inserirUsuario(32, "Elijah Keith", "Italia", "22 659852116")
+inserirUsuario(33, "Ruanito Marchal", "Mexico", "88 999 8787")
+
+inserirAutor(25, "Jane Austen", "Inglaterra")
+inserirAutor(26, "Virginia Woolf", "EUA")
+inserirAutor(27, "Agatha Cristie", "Brasil")
+
+inserirEditora(11, "Penguin Random House")
+inserirEditora(12, "Harper Collins Publishers")
+inserirEditora(13, "Simon & Schuster")
+
+inserirLivro(2,"Orgulho e Preconceito", "Drama", 11, 25, 87)
+inserirLivro(3,"Ao Farol", "Literatura", 12, 26, 55)
+inserirLivro(4, "Mistério do Relógio", "Crime", 13, 27, 66)
+
+
 
 """
 Quem for responsável por inserir novas entradas é só usar a função como
