@@ -11,6 +11,7 @@ cursor = conexao.cursor()
 cursor.execute('DROP TABLE Emprestimo;')
 cursor.execute('CREATE TABLE Emprestimo (id INT PRIMARY KEY, id_Usuario INT, id_Livro INT, status BOOLEAN, data_emprestimo DATE, data_devolucao DATE, renovacao INT, FOREIGN KEY (id_Usuario) REFERENCES Usuario(id), FOREIGN KEY (id_Livro) REFERENCES Livro(ID), FOREIGN KEY (status) REFERENCES Livro(status));')
 
+# cursor.execute('INSERT INTO Emprestimo (id, id_Usuario, id_Livro, status, data_emprestimo, data_devolucao, renovacao) VALUES (1, 4, 5, True, 02-02-2024, 07-02-2024, 4);')
 
 conexao.commit()
 conexao.close

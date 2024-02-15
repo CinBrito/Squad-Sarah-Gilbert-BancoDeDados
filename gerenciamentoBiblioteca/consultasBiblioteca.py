@@ -1,3 +1,4 @@
+import datetime
 from conexaoBiblioteca import cursor, conexao
 
 # Listartodososlivrosdisponíveis
@@ -39,4 +40,7 @@ def buscarExemplaresPorLivro():
 
 # Mostrar os empréstimos em atraso.
 def buscarEmprestimosEmAtraso():
-    pass
+    data_atual = datetime.datetime.now()
+    listagem = conexao.execute('SELECT Livro.titulo FROM Livro INNER JOIN Emprestimo WHERE Emprestimo.status = False and Emprestimo.data_devolucao < ?', (data_atual))
+    for livro in listagem:
+        print(livro)
